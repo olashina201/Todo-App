@@ -18,17 +18,17 @@ function Header({input, setInput, todos , setTodos, editTodo, setEditTodo}) {
     }
 
     return (
-        <header className="block header">
+        <header className={ mode ? "block header darkmode" : "block header"}>
 
             <div className="container">
 
-                <img src={bgdark} alt="" className="bg bg-light" />
-                <img src={bglight} alt="" className="bg bg-dark" />
+                
+                <img src={mode ? bgdark : bglight} alt="" className="bg bg-dark" />
 
                 <h1 className="logo">TODO</h1>
 
                 <button className="btn darkmode-toggle">
-                    <img src={moon} alt="" />
+                    <img src={moon} onClick={toggle} alt="" />
                 </button>
 
                 <button className="btn lightmode-toggle">
@@ -40,9 +40,7 @@ function Header({input, setInput, todos , setTodos, editTodo, setEditTodo}) {
                         <input type="checkbox" name="Add todo" id="addTodo" />
                         <input type="text" placeholder="Create a new todo..." className="todo-input" value={input} onChange= { e => setInput(e.target.value)}  />
                     </form>
-                
-
-
+    
             </div>
 
         </header>

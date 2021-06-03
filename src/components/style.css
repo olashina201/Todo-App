@@ -330,7 +330,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   gap: 1.5rem;
   position: absolute;
@@ -385,6 +384,7 @@ a {
 
 .darkmode .header .bg-dark {
   opacity: 0;
+  background: url(../images/bg-desktop-dark.jpg);
 }
 
 .darkmode .todos__item.ghost, .darkmode .todos__item:hover {
