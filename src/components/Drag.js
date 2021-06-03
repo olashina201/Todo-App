@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Drag({ mode, setMode}) {
+function Drag() {
     return (
-        <section className={ mode ? "darkmode footer" : "block footer"}>
-            <p className={ mode ? "darkmode footer__text" : "footer__text"}>
+        <section className="block footer">
+            <p className="footer__text">
                 Drag and drop [text] to reorder list
             </p>
         </section>

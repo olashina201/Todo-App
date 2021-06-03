@@ -207,6 +207,9 @@ a {
       justify-self: left;
   letter-spacing: .5em;
 }
+.darkmode .logo{
+  color:  white;
+}
 
 .header .bg {
   position: absolute;
@@ -367,7 +370,7 @@ a {
 }
 
 .darkmode .header .logo {
-  color: white;
+  color: rgba(22, 23, 34, 0.4) !important;;
 }
 
 .darkmode .header .lightmode-toggle {
