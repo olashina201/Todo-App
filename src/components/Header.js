@@ -10,7 +10,6 @@ function Header({input, setInput, todos , setTodos, editTodo, setEditTodo, mode,
     
     const toggle = () => setMode(!mode);
 
-
     const handleSubmit = (e) => {
         e.preventDefault()
         setTodos([...todos, {title: input, completed: false}])
