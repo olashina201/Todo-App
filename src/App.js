@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from './components/Header'
-import Todos from './components/Todos'
+import Drag from "./components/Drag";
 import Footer from './components/Footer'
 
 function App() {
@@ -25,6 +25,10 @@ function App() {
         todos = {todos}
         setTodos = {setTodos}
         setEditTodo = {setEditTodo}
+        mode = {mode}
+        setMode = {setMode}
+      />
+      <Drag 
         mode = {mode}
         setMode = {setMode}
       />

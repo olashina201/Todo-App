@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './style.css'
 
-function Footer({todos, setTodos, setEditTodo}) {
+function Footer({todos, setTodos, setEditTodo, mode, setMode}) {
     const [complete, setComplete] = useState(false)
     // setComplete = (todo) => {
     //     setTodos(
@@ -29,7 +29,7 @@ function Footer({todos, setTodos, setEditTodo}) {
     };
     return (
         <footer id="footer">
-            <section className="main">
+            <section className={ mode ? "darkmode main" : "main"}>
                 <div className="container">
                     <div className="todos header">
                         {todos.map((todo) => (
