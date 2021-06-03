@@ -6,8 +6,8 @@ import bgdark from '../images/bg-desktop-dark.jpg'
 import bglight from '../images/bg-desktop-light.jpg'
 
 
-function Header({input, setInput, todos , setTodos, editTodo, setEditTodo}) {
-    const [mode, setMode] = useState(false)
+function Header({input, setInput, todos , setTodos, editTodo, setEditTodo, mode, setMode}) {
+    
     const toggle = () => setMode(!mode);
 
 
@@ -28,7 +28,7 @@ function Header({input, setInput, todos , setTodos, editTodo, setEditTodo}) {
                 <h1 className="logo">TODO</h1>
 
                 <button className="btn darkmode-toggle">
-                    <img src={moon} onClick={toggle} alt="" />
+                    <img src={mode? sun : moon} onClick={toggle} alt="" />
                 </button>
 
                 <button className="btn lightmode-toggle">

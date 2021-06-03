@@ -4,7 +4,7 @@ import Todos from './components/Todos'
 import Footer from './components/Footer'
 
 function App() {
-
+  const [mode, setMode] = useState(false)
   const [input, setInput] = useState("")
   const [todos, setTodos] = useState([])
   const [editTodo, setEditTodo] = useState(null)
@@ -18,11 +18,15 @@ function App() {
         setTodos = {setTodos}
         editTodo = {editTodo}
         setEditTodo = {setEditTodo}
+        mode = {mode}
+        setMode = {setMode}
       />
       <Footer 
         todos = {todos}
         setTodos = {setTodos}
         setEditTodo = {setEditTodo}
+        mode = {mode}
+        setMode = {setMode}
       />
     </React.Fragment>
   );
